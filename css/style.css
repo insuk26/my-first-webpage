@@ -73,6 +73,8 @@ section {
   /* background-color: #fff; */
 }
 
+/* 섹션 타이틀 넣기 - 공통 스타일이라는 뜻 */
+
 /* 헤더 영역 시작 */
 .header {
   width: 100%;
@@ -455,6 +457,7 @@ section {
 }
 
 /* 추천축제 키워드 영역 */
+
 .keywords {
   position: relative;
   width: 100%;
@@ -463,11 +466,66 @@ section {
 }
 
 .rank {
+  position: relative;
   width: 100%;
-  height: 384px;
+  /* height: 384px; */
   padding-top: 65px;
-  background-color: steelblue;
+  /* background-color: steelblue; */
 }
+
+.rank_warp {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  padding-bottom: 105px;
+  display: flex;
+  justify-content: center;
+  background: url("../assets/images/img_keyword.png") left bottom no-repeat;
+  background-size: 342px 284px;
+}
+
+.rank .inner {
+  position: relative;
+  display: flex;
+  justify-self: space-between;
+  align-items: flex-start;
+}
+
+.rank-list-wrap {
+  position: relative;
+  display: flex;
+  width: calc(100% - 320px);
+  padding-top: 50px;
+}
+
+.rank-list-wrap > ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.rank-list-wrap > ul:first-child {
+  padding-right: 64px;
+}
+
+.rank-list-wrap > ul:last-child {
+  padding-left: 64px;
+}
+
+.rank-list-wrap > ul > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.rank-list-wrap > ul > li > .num {
+  font-size: 14px;
+}
+.rank-list-wrap > ul > li > a {
+  font-size: 20px;
+}
+
 .festival {
   width: 100%;
   height: 507px;
