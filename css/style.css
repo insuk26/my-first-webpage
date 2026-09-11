@@ -72,8 +72,16 @@ section {
   height: 100%;
   /* background-color: #fff; */
 }
-
-/* 섹션 타이틀 넣기 - 공통 스타일이라는 뜻 */
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+}
+.section-title em {
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* 헤더 영역 시작 */
 .header {
@@ -169,11 +177,13 @@ section {
   background: url("../assets/icons/search_btn_bk.png") no-repeat center;
   background-size: contain;
 }
+
 /* 헤더 영역 끝 */
+
 /* 메인 영역 시작 */
 .main {
   width: 100%;
-  /* background-color: wheat;  */
+  /* background-color: wheat; */
 }
 
 .hero {
@@ -209,7 +219,7 @@ section {
   /* width: 100%; */
   height: 123px;
   background: url("../assets/images/bg_wave.png") no-repeat center;
-  background-size: contain;
+  background-size: 100% 100%;
   z-index: 1;
 }
 
@@ -414,27 +424,6 @@ section {
   pointer-events: none;
 }
 
-.sw-hero .pagination .swiper-pagination {
-  position: static;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 65px;
-  height: 30px;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #fff;
-}
-
-.sw-hero .pagination .swiper-pagination .page-current {
-  font-weight: 800;
-}
-
-.sw-hero .pagination .swiper-pagination .page-total {
-}
-
 .sw-hero .pagination {
   position: absolute;
   left: calc(50% + 140px);
@@ -455,25 +444,76 @@ section {
   text-indent: -9999px;
   border-radius: 50%;
 }
+.sw-hero .pagination .swiper-pagination {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 65px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.sw-hero .pagination .swiper-pagination .swiper-pagination-current {
+  /* color: #fff; */
+  font-weight: 700;
+}
+.sw-hero .pagination .swiper-pagination .swiper-pagination-total {
+  /* color: #fff; */
+}
 
 /* 추천축제 키워드 영역 */
-
 .keywords {
   position: relative;
   width: 100%;
   height: 85px;
   /* background-color: yellow; */
 }
+.keywords .inner {
+  position: relative;
+}
+.keywords .keywords-wrap {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: 10;
+}
+
+.keywords .keywords-wrap ul {
+  position: relative;
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.keywords .keywords-wrap ul li {
+  position: relative;
+}
+.keywords .keywords-wrap ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 16px;
+  color: #80808a;
+  border: 1px solid #80808a;
+  border-radius: 20px;
+}
+.keywords .keywords-wrap ul li:hover a {
+  background-color: #7a45e5;
+  color: #fff;
+}
 
 .rank {
   position: relative;
   width: 100%;
-  /* height: 384px; */
   padding-top: 65px;
   /* background-color: steelblue; */
 }
-
-.rank_warp {
+.rank-wrap {
   position: relative;
   width: 100%;
   max-width: 1040px;
@@ -483,36 +523,30 @@ section {
   background: url("../assets/images/img_keyword.png") left bottom no-repeat;
   background-size: 342px 284px;
 }
-
 .rank .inner {
   position: relative;
   display: flex;
-  justify-self: space-between;
+  justify-content: space-between;
   align-items: flex-start;
 }
-
 .rank-list-wrap {
   position: relative;
   display: flex;
   width: calc(100% - 320px);
   padding-top: 50px;
 }
-
 .rank-list-wrap > ul {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-
 .rank-list-wrap > ul:first-child {
   padding-right: 64px;
 }
-
 .rank-list-wrap > ul:last-child {
   padding-left: 64px;
 }
-
 .rank-list-wrap > ul > li {
   position: relative;
   display: flex;
@@ -520,7 +554,36 @@ section {
   gap: 11px;
 }
 .rank-list-wrap > ul > li > .num {
+  display: block;
+  line-height: 22px;
+  text-align: center;
   font-size: 14px;
+  color: #666670;
+  font-weight: 500;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #f2f2f7;
+}
+.rank-list-wrap > ul > li > .num.medal {
+  width: 20px;
+  height: 27px;
+  background: url("../assets/images/rank_top.png") no-repeat center;
+  background-size: 100% auto;
+  border-radius: 0;
+  line-height: 20px;
+}
+.rank-list-wrap > ul > li > .num.medal.gold {
+  color: #9b530c;
+  background-position: 0 0;
+}
+.rank-list-wrap > ul > li > .num.medal.silver {
+  color: #4e4e50;
+  background-position: 0 -27px;
+}
+.rank-list-wrap > ul > li > .num.medal.bronze {
+  color: #763e1e;
+  background-position: 0 -54px;
 }
 .rank-list-wrap > ul > li > a {
   font-size: 20px;

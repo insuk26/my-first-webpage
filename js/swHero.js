@@ -14,7 +14,7 @@ heroBtns.forEach((btn) => {
   btn.addEventListener("mouseenter", () => {
     btn.querySelector(".off").style.opacity = 1;
   });
-  btn.addEventListener("mouseout", () => {
+  btn.addEventListener("mouseleave", () => {
     btn.querySelector(".off").style.opacity = 0;
   });
 });
