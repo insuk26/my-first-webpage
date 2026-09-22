@@ -705,17 +705,222 @@ section {
 }
 
 .alio {
+  position: relative;
   width: 100%;
-  height: 391px;
+  /* height: 391px; */
   padding-top: 65px;
-  background-color: slategrey;
+  /* background-color: slategrey; */
 }
+.alio .inner {
+  position: relative;
+}
+.alio .title-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.alio .title-wrap .section-title {
+}
+
+.alio .more-btn {
+}
+
+.alio .card-wrap {
+  position: relative;
+  width: 100%;
+}
+.alio .card-wrap ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.alio .card-wrap ul li {
+  position: relative;
+}
+.alio .card-wrap .alio-card {
+  position: relative;
+  display: block;
+  width: 208px;
+}
+.alio .card-wrap .alio-card .img-wrap {
+  position: relative;
+  width: 100%;
+  height: 208px;
+}
+.alio .card-wrap .alio-card .img-wrap > img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  z-index: 999;
+}
+.alio .card-wrap .alio-card .img-wrap .img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.alio .card-wrap .alio-card .img-wrap .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.alio .card-wrap .alio-card .text-wrap {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.alio .card-wrap .alio-card .text-wrap strong {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.alio .card-wrap .alio-card .text-wrap .date {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #4d4d57;
+  margin-bottom: 5px;
+}
+.alio .card-wrap .alio-card .text-wrap .location {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #4d4d57;
+  margin-bottom: 5px;
+}
+
 .banner {
   width: 100%;
   height: 229px;
   padding-top: 65px;
   background-color: chocolate;
 }
+
+.banner {
+  position: relative;
+  width: 100%;
+  /* height: 229px; */
+  padding-top: 65px;
+  /* background-color: chocolate; */
+}
+.banner .inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.banner .pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.banner .pagination .banner-prev-btn {
+  width: 10px;
+  height: 16px;
+  background: url("../assets/icons/main_slide_prev.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999px;
+}
+.banner .pagination .banner-next-btn {
+  width: 10px;
+  height: 16px;
+  background: url("../assets/icons/main_slide_next.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999px;
+}
+.banner .pagination .swiper-pagination {
+  position: static;
+  width: auto;
+  margin: 0 16px;
+}
+
+.banner .pagination .swiper-pagination .swiper-pagination-current {
+  width: 10px;
+  margin-right: 3px;
+  font-weight: 600;
+}
+.banner .pagination .swiper-pagination .swiper-pagination-total {
+  margin-left: 12px;
+  font-weight: 300;
+}
+.banner .pagination .play-stop-btn {
+  width: 12px;
+  height: 14px;
+  background: url("../assets/icons/slide_stop_bk.png") center no-repeat;
+  background-size: 8px 10px;
+  text-indent: -9999px;
+}
+
+.sw-banner {
+  position: relative;
+  /* width: 100%; */
+}
+.sw-banner .swiper-wrapper {
+  position: relative;
+}
+.sw-banner .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+.sw-banner .swiper-wrapper .swiper-slide a {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sw-banner .swiper-wrapper .swiper-slide a > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .desc {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap strong {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  gap: 4px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: fit-content;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .link-btn span {
+  font-size: 14px;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .link-btn img {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
 .theme {
   width: 100%;
   height: 262px;
